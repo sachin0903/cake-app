@@ -2,10 +2,10 @@
 
 Following are the steps to confgiure and run the application:
 Prerequisite:
-    1. node js should be installed on the machine where code is going to be run
+    1. node js should be installed on the machine where code is going to run
 
 Installation:
-    1. Copy and unzip the source code on your local drive
+    1. Clone the repository on your machine
     2. Navigate to the "src" folder of source code using command line tool
     3. run "npm update"
     4. run "gulp"
