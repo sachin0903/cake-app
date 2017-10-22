@@ -1,0 +1,37 @@
+<h1>Cake Gallery</h1>
+ <div>
+   <div layout="row" flex="60"  layout-wrap>
+     <div flex="100">
+        <h2>Cakes</h2>
+      </div>
+       <div ng-repeat="cake in cakes" ng-if="!cake.comment" class="row">
+          <div layout="row">
+            <md-content class="md-padding">
+              <md-card md-theme="dark-blue" md-theme-watch >
+                <cake-card name="cake.name"></cake-card>
+                   <md-card-actions layout="row" layout-align="end center">
+                       <open-dialog on-submit="addReview($event, cake)">Add Review</open-dialog>
+                    </md-card-actions>
+                  </md-card>
+            </md-content>
+          </div>
+        </div>
+  </div>
+   <div layout="row" flex="40" layout-wrap>
+      <div flex="100">
+        <h2>Favourite Cakes</h2>
+      </div>
+        <div ng-repeat="cake in cakes" ng-if="cake.comment" class="row">
+          <div layout="row" layout-wrap>
+            <md-content class="md-padding">
+               <md-card md-theme="dark-blue" md-theme-watch >
+                   <cake-card name="cake.name"></cake-card>
+                    <md-card-actions layout="row" layout-align="end center">
+                      <open-dialog on-submit="showAdvanced($event, cake)">Show Comments</open-dialog>
+                    </md-card-actions>
+                  </md-card>
+            </md-content>
+          </div>
+       </div>
+   </div>
+</div>

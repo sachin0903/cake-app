@@ -1,0 +1,36 @@
+.card-image{
+    margin-right: -30px;
+}
+
+.md-card .md-card-title .md-card-title-media .md-media-lg{
+    height:0px;
+}
+
+.card-height{
+    height: 0px;
+}
+
+form {
+  overflow: hidden;
+}
+
+label{
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+input {
+  display: inline-block;
+}
+
+.margin{
+   margin-bottom:10px;
+}
+
+h1 {
+    text-align: center;
+}
+.carddemoBasicUsage .card-media {
+    background-color: #999999; 
+}
